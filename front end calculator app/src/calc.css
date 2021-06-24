@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 70px  repeat(5, 70px) ;
+    
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    grid-template-areas: 
+    "screen screen screen screen"
+    "seven eight nine delete"
+    "four five six add"
+    "one two three minus"
+    "dot zero fowardSlash multiply"
+    "reset reset equal equal";
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    width: 410px;
+    border-radius: 10px;
+    
+    
+}
+
+
+#screen-div {
+    position: absolute;
+    background-color: hsl(225, 21%, 49%);
+    height: 100px;
+    width: 410px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+   
+}
+
+#screen {
+    grid-area: screen;
+    border-radius: 10px;
+    align-self: stretch; 
+    height: 80px;
+    text-align: end;
+    justify-content: start;
+    font-size: 3rem;
+    padding: 10px 10px;
+    background-color: hsl(223, 31%, 20%);
+    color: white;
+    
+}
+
+#equal::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    background-color: black;
+}
+
+#equal::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 15px;
+    background-color: black;
+}
+
+#background {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;
+     background-color: hsl(225, 21%, 49%);
+}  
+
+
+   #one {
+    background-color: white;
+    grid-area: one;
+
+    border-radius: 10px;
+}
+
+#two {
+    background-color: white;
+    grid-area: two;
+    border-radius: 10px;
+    
+}
+
+#three {
+    background-color: white; 
+    grid-area: three;
+    border-radius: 10px;
+}
+
+#four {
+    background-color: white;
+    grid-area: four;
+    border-radius: 10px;
+}
+
+#five {
+    background-color: white;
+    grid-area: five;
+    border-radius: 10px;
+}
+
+#six {
+    background-color: white;
+    grid-area: six;
+    border-radius: 10px;
+}
+
+#seven {
+    background-color: white;
+    grid-area: seven;
+    border-radius: 10px;
+}
+
+#eight {
+    background-color: white;
+    grid-area: eight;
+    border-radius: 10px;
+    
+    
+}
+
+#nine {
+    background-color: white;
+    grid-area: nine;
+    border-radius: 10px;
+}
+
+#ten {
+    background-color: white;
+    grid-area: ten;
+    border-radius: 10px;
+}
+
+#dot {
+    background-color: white;
+    grid-area: dot;
+    border-radius: 10px;
+    
+}
+
+#fowardSlash {
+    background-color: white;
+    grid-area: fowardSlash;
+    border-radius: 10px;
+}
+
+#delete {
+    background-color: hsl(225, 21%, 49%);
+    grid-area: delete;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 32px;
+    font-family: Spartan;
+    font-weight: 700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+}
+
+#delete:hover {
+    cursor: pointer;
+}
+
+#add {
+    background-color: white;
+    grid-area: add;
+    border-radius: 10px;
+}
+
+#minus {
+    background-color: white;
+    grid-area: minus;
+    border-radius: 10px;
+}
+
+#multiply {
+    background-color: white;
+    grid-area: multiply;
+    border-radius: 10px;
+}
+
+#zero {
+    background-color: white;
+    grid-area: zero;
+    border-radius: 10px;
+} 
+
+#reset {
+    grid-area: reset;
+    background-color:  hsl(225, 21%, 49%);
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0px 5px   hsl(225, 22%, 29%);
+}
+
+#equal {
+    grid-area: equal;
+    height: 40px;
+    width: 180px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 10px;
+    box-shadow:  0px 5px   hsl(0, 93%, 48%);
+    position: relative;
+}
+  
+.button {
+    text-align: center;
+    font-size: 32px;
+    font-family: Spartan;
+    font-weight: 700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button {
+    box-shadow:  0px 5px   burlywood;
+}
+
+#delete {
+    box-shadow:  0px 5px   hsl(225, 22%, 29%);
+}
+
+
+
+@media  (orientation: portrait) {
+    #container {
+        height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
